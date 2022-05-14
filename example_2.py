@@ -36,10 +36,10 @@ final_row_index_1 = convert_array_to_excel_worksheet(class1_grades, worksheet1)
 final_row_index_2 = convert_array_to_excel_worksheet(class2_grades, worksheet2)
 
 worksheet1.write(final_row_index_1, 0, 'Average Grade')
-worksheet1.write(final_row_index_1, 1, '=(SUM(B1:B4)/3)')
+worksheet1.write(final_row_index_1, 1, '=AVERAGE(B2:B4)')
 
 worksheet1.write(final_row_index_2, 0, 'Average Grade')
-worksheet1.write(final_row_index_2, 1, '=(SUM(B1:B4)/3)')
+worksheet1.write(final_row_index_2, 1, '=AVERAGE(B2:B4)')
 
 workbook.close()
 
